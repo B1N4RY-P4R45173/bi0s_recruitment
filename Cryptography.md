@@ -21,3 +21,5 @@ used a calculator to find out the reminders of the numbers when divided by 37 an
 `bi0s{RSA_b4s1c5_d0wN}`
 #### SET_3
 8)Used a simple code to get the answer [Click here for the code](https://codebeautify.org/alleditor/y232cd041) and the answwer is 2517156635422290349895122850094519613944045480810490330799102798840909214118869098422121935037342009366180047353467080036440206663097061997061371831538593
+9)Got the values of p and q using an online website called [factordb.com](factordb.com) then used a simple code to get the answer [Click here for the code](https://codebeautify.org/alleditor/y238b1455) and the answer is b'EmaculateElephant'
+10)
