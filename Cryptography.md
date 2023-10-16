@@ -7,4 +7,8 @@ used a calculator to find out the reminders of the numbers when divided by 37 an
 ### RSA LABS
 #### SET_1
 1) Used a simple code to get first answer ` print (184330444484971285142460232397023765426 ** 3) `  and got this answer 6135583487401455331857846807452040736544202100790999584440952331386605938837362668434489390281029904630798183441373
-2) Used a simple code to get the answer [Click here for code](https://codebeautify.org/alleditor/y23e1e04f)
+2) Used a simple code to get the answer [Click here for the code](https://codebeautify.org/alleditor/y23e1e04f) and the answer is 448378203247
+3) Used a simple code to get hte answer [Click here for the code](https://codebeautify.org/alleditor/y23b9b320) and the anser is b'Go0d_j0b'
+4) Used a simple code to get the answer [Click here for the code](https://codebeautify.org/alleditor/y2395d8fb) and the answer is 1346354641729722100187923714176357
+#### Flag1 Found
+`bi0s{M4tH_fr35h3R}`
