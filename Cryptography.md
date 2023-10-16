@@ -14,3 +14,5 @@ used a calculator to find out the reminders of the numbers when divided by 37 an
 `bi0s{M4tH_fr35h3R}`
 #### SET_2
 1) Used a simple code to get the answer [Click here for code](https://codebeautify.org/alleditor/y236f4209) and the answer is 65841821185016467683634219915386690636061039203540667044364304111581837268724717649760668426196878817815138732235931063830065130736502687301090537174402070091198691518643224414083249147574431927632121449271285763346553880311808742497116331837887554541969490298562797549245911541637635558037327945225165024500
+2) Used a simple code to get the answer [Click here for the code](https://codebeautify.org/alleditor/y2363ec4e) and the answer is b'DinoDominion'
+   understood that pow(a,b,c) is more optimised than using (a ** b) % c
