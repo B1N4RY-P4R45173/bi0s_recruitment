@@ -28,4 +28,10 @@ used a calculator to find out the reminders of the numbers when divided by 37 an
 #### Flag3 Found
 `bi0s{y0u_H4v3_gR4dU4t3d}`
 ### RSA in CTF challenge
-Used a simple code to get the flag [Click here for the code](https://codebeautify.org/alleditor/y23b165fd) and the answer is b'inctfj{bob_was_authenticated_by_alice}'
+Used a simple code to get the flag [Click here for the code](https://codebeautify.org/alleditor/y23b165fd) and the answer is `b'inctfj{bob_was_authenticated_by_alice}'`
+### C1ph3rz.zip
+Imported Xor library from pwntools to complete the challenge [Click here for the code](https://github.com/koppakaajay/bi0s_recruitment/blob/main/ciphers.zip.py)
+#### FLAG FOUND
+`Flag{X0R_3ncrypT10n_15_Fun}`
+### Cryptopals
+[Click here for the code](https://github.com/koppakaajay/bi0s_recruitment/blob/main/cryptopals.py)
