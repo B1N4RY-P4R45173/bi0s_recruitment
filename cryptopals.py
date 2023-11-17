@@ -54,8 +54,8 @@ def xor(a, b):
 string = bytes("""Burning 'em, if you ain't quick and nimble 
                 I go crazy when I hear a cymbal""", 'UTF-8')
 key = bytes("ICE", 'UTF-8')
-ans = xor(string,key)
-print (ans.hex())
+print ((xor(string,key)).hex())
+
                      
 #cryptopals7
 def decrypt_aes_ecb(ciphertext, key):
