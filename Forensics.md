@@ -30,3 +30,9 @@ Just fixed Magic numbers for the png image as 89 50 4E 47 0D 0A 1A 0A and got th
 #### FLAG FOUND:
 `vidyutctf{4r3_y4_w1nn1ng_s0n}`
 
+### 3nc1m4g3
+#### Process:
+wrote a python script which xors the magic numbers of the png with actual magic numbers of a png to obtain the key. The it xors the whole image with key. The result here was a QR code. So I used another script to get the text out of the QR code.
+#### FLAG FOUND:
+`flag{x0r_1s_c00l;)}`
+
