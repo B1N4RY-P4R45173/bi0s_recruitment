@@ -16,15 +16,29 @@ The I went through the rest of the packets and there I found a suspected string 
 ### Method- 1
 This can be done by using stegsolve usin the inbuilt image combiner. We need to combine the images incredible and chall. And under the SUB plane you can see the flag
 ### Method- 2
-We can also do this by importing th cv2open library in python
+We can also do this by importing th numpy and PIL libraries in python
+from PIL import Image
+import numpy as np
 
+def combine_images(image1, image2, operation):
+    operations = {
+        "subtract": np.subtract,
+        "add": np.add,
+        "xor": np.bitwise_xor,
+        "or": np.bitwise_or,
+        "multiply": np.multiply,
+    }
+    result_array = operations[operation](image1, image2)
+    return Image.fromarray(result_array)
 
-
-
-
-
-
-
+if __name__ == "__main__":
+    img1 = np.array(Image.open("chall.png"))
+    img2 = np.array(Image.open("incredible.png"))
+    operators = ['add', 'xor', 'or', 'multiply', 'subtract']
+    
+    for operation in operators:
+        result_image = combine_images(img1, img2, operation)
+        result_image.show(operation)
 
 ## FLAG FOUND
 `flag{h4ppy_h4ppy_h4ppy_:)}`  
