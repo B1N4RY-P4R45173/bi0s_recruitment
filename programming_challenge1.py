@@ -1,4 +1,7 @@
-arr = [2, 3, 4]
+user_input = input ("enter the numbers with spaces: ").split()
+arr =[]
+for i in user_input:
+    arr.append(int(i))
 count = 0
 seen = set()
 # prints same array (for checking if the array is correct)
@@ -20,4 +23,3 @@ while True:
         else:
             seen.add(arr[i])
 print (count)
-
