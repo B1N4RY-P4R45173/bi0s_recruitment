@@ -9,8 +9,7 @@ for i, j in enumerate(input_list):
         sum += i
 
 print(sum)
-"""
-"""
+
 user_input = input("Enter numbers separated by spaces: ")
 input_list = user_input.split()
 
