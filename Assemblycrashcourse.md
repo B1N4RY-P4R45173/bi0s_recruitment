@@ -1,3 +1,13 @@
+## general code
+`import pwn 
+pwn.context.update(arch="amd64") 
+code = pwn.asm(""" """ ) 
+process = pwn.process("/challenge/run") 
+process.write(code) 
+print(process.readall())`
+
+
+
 ## Challenge 1
 ` mov rdi, 0x1337`
 ## Challenge 2
