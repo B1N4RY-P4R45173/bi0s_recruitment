@@ -30,3 +30,7 @@ shr rax, 56`
 ## challenge 10
 `and rax, rdi
 and rax, rsi`
+
+
+`and rdi, rsi
+and rax, rdi`
