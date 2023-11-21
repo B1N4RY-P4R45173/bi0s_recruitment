@@ -1,6 +1,5 @@
 ## general code
-`import pwn 
-
+`import pwn \n
 pwn.context.update(arch="amd64") 
 
 code = pwn.asm(""" """ ) 
