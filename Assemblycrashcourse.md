@@ -1,4 +1,4 @@
-## general code
+# General Code
 import pwn 
 
 pwn.context.update(arch="amd64") 
