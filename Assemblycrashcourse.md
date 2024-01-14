@@ -16,8 +16,8 @@ print(process.readall())
 ` mov rdi, 0x1337`
 ## Challenge 2
 `mov rax, 0x1337
-mov r12, 0xCAFED00D1337BEEF
-mov rsp, 0x31337`
+ mov r12, 0xCAFED00D1337BEEF
+ mov rsp, 0x31337`
 ## chalenge 3
 `add rdi, 0x331337
 mov rax, rdi`
